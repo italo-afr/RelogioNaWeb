@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+:root {
+    /* Fontes */
+    --fonte: 'Montserrat', sans-serif;
+    
+    /* Cores */
+    --fundocre: #FFE5CA;
+    --fundolaran: #FA9884;
+    --sombra: rgba(0, 0, 0, .5);
+    --branco: #fff;
+    --preto: rgba(5, 5, 5, .9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte);
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, var(--fundocre), var(--fundolaran));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogiodig {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 220px;
+    width: 580px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px var(--sombra);
+}
+
+.separacao {
+    color: var(--preto);
+}
+
+.relogiodig div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    background: var(--preto);
+    box-shadow: 5px 5px 15px var(--sombra);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogiodig span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogiodig span.tempo {
+    font-size: 10px;
+}
